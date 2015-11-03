@@ -8,4 +8,4 @@ def hello():
     return 'What up world!'
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0')
+    app.run()
