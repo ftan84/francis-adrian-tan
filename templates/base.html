@@ -11,19 +11,20 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
 
-    <link href="main.css" rel="stylesheet">
+    <!-- <link href="main.css" rel="stylesheet"> -->
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
 
 </head>
 <body>
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
+            <!-- <button type="button" class="navbar&#45;toggle collapsed" data&#45;toggle="collapse" data&#45;target="#navbar" aria&#45;expanded="false" aria&#45;controls="navbar"> -->
+            <!--     <span class="sr&#45;only">Toggle navigation</span> -->
+            <!--     <span class="icon&#45;bar"></span> -->
+            <!--     <span class="icon&#45;bar"></span> -->
+            <!--     <span class="icon&#45;bar"></span> -->
+            <!-- </button> -->
             <a class="navbar-brand" href="/">Home</a>
         </div>
       </div>
@@ -32,9 +33,17 @@
 <div class='jumbotron'>
 <div class='container'>
 <h2>Francis Tan, MBA</h2>
-Hello, my name is Francis Tan. I am an amateur Data Scientist with a passion for all things data. With an MBA degree, I have a big picture prespective on the data-related questions that help drive business needs.
+<h4>
+I am an aspiring Data Scientist with a passion for all things data. With an MBA degree, I have a big picture perspective on the data-related questions that help drive business needs.
+</h4>
 </div>
 </div>
+
+{% block content %}{% endblock %}
+<!-- <div class='container'> -->
+<!--     Hi! My name is Francis Tan and welcome to my site. -->
+<!--     Please have a look at some of my work on my <a href="{{ url_for('projects') }}">projects</a> page. -->
+<!-- </div> -->
 
 
 <!-- Latest compiled and minified JavaScript -->
