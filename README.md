@@ -5,4 +5,5 @@ This is my personal website which showcases my work, my passions and my experime
 ## Dependencies
 
 Flask
+
 ```pip install Flask```
