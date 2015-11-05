@@ -1,7 +1,22 @@
 {% extends "base.html" %}
 {% block content %}
 <div class='container'>
-    Hi! My name is Francis Tan and welcome to my site.
-    Please have a look at some of my work on my <a href="{{ url_for('projects') }}">projects</a> page.
+    <p>Hi! My name is Francis Tan and welcome to my site. I am a lifelong learner in pursuit of mastering the art (or science) of Data Science. I have created this site to showcase my work, my passion, and my experiments.</p>
+
+    <p>Please have a look at some of my work on <a href="https://github.com/ftan84">GitHub</a>.</p>
+
+    <p>You can also find some of the website work I've done below:
+        <ul>
+            <li><a href="http://katiaandfrancis.com" target="_blank">katiaandfrancis.com</a> - My wedding website</li>
+            <li><a href="http://brixband.com" target="_blank">brixband.com</a> - Brix Big Band artist website</li>
+        </ul>
+    </p>
+    
+    <p>Finally you can get more information about me from my <a href="https://www.linkedin.com/pub/francis-tan/4/9a8/ba5" target="_blank">LinkedIn</a> profile, my <a href="{{ url_for('static', filename='files/resume.pdf') }}" target="_blank">resume</a> or you can <a href="mailto:francis.adrian.tan@gmail.com">email</a> me directly.</p>
+
+    <p>Thanks for visiting!</p>
+
+
+
 </div>
 {% endblock %}

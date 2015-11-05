@@ -14,24 +14,41 @@
     <!-- <link href="main.css" rel="stylesheet"> -->
     <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
 
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+
+
+<!-- <!&#45;&#45; Include all compiled plugins (below), or include individual files as needed &#45;&#45;> -->
+<!-- <script src="js/bootstrap.min.js"></script> -->
 </head>
 <body>
 <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
+    <div class="container-fluid">
         <div class="navbar-header">
-            <!-- <button type="button" class="navbar&#45;toggle collapsed" data&#45;toggle="collapse" data&#45;target="#navbar" aria&#45;expanded="false" aria&#45;controls="navbar"> -->
-            <!--     <span class="sr&#45;only">Toggle navigation</span> -->
-            <!--     <span class="icon&#45;bar"></span> -->
-            <!--     <span class="icon&#45;bar"></span> -->
-            <!--     <span class="icon&#45;bar"></span> -->
-            <!-- </button> -->
-            <a class="navbar-brand" href="/">Home</a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mynavcontent" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- <a class="navbar&#45;brand" href="/">Francis Tan</a> -->
         </div>
-      </div>
+
+        <div class="collapse navbar-collapse" id="mynavcontent">
+            <ul class="nav navbar-nav">
+                <li><a href="https://github.com/ftan84" target="_blank">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/pub/francis-tan/4/9a8/ba5" target="_blank">LinkedIn</a></li>
+                <li><a href="{{ url_for('static', filename='files/resume.pdf') }}" target="_blank">Resume</a></li>
+                <li><a href="mailto:francis.adrian.tan@gmail.com">Email</a></li>
+            </ul>
+        </div>
+    </div>
 </nav>
 
-<div class='jumbotron'>
-<div class='container'>
+<div class="jumbotron">
+<div class="container">
 <h2>Francis Tan, MBA</h2>
 <h4>
 I am an aspiring Data Scientist with a passion for all things data. With an MBA degree, I have a big picture perspective on the data-related questions that help drive business needs.
@@ -40,19 +57,7 @@ I am an aspiring Data Scientist with a passion for all things data. With an MBA 
 </div>
 
 {% block content %}{% endblock %}
-<!-- <div class='container'> -->
-<!--     Hi! My name is Francis Tan and welcome to my site. -->
-<!--     Please have a look at some of my work on my <a href="{{ url_for('projects') }}">projects</a> page. -->
-<!-- </div> -->
 
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
-
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
